@@ -1,0 +1,153 @@
+---
+title: "Notes"
+author: "Hursh Gupta"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Some Basics
+
+-   Use `Ctrl` + `Enter` to run a code line under the cursor
+-   R doesn't consider **next line**, it uses *strict parenthesis*
+-   Some useful R commands
+
+```{r packages, include=FALSE}
+#q()
+#help.start()
+#help(func_name)
+#example(func_name)
+#help.search(item)
+#help(package = "ggplot2")
+## vignettes are additional documents such as tutorials, intros etc.
+#vignette()
+#vignette(package = "ggplot2")
+```
+
+
+### Everything in **R** is basically an object. There are *6 basic* data types
+
+-   character "a" "z"
+-   numeric (real or decimal) $3,12.2$ (default)
+-   integer $5L$ (L is an instruction to store as an int)
+-   logical TRUE FALSE
+-   complex $1 + 2i$
+
+## Class Vs TYPE vs MODE
+
+```{r meta}
+#class()
+#typeof()
+#length()
+#attributes()
+nchar("sairam hi there")
+```
+
+## Printing
+
+```{r printing}
+pi = sqrt(5)
+print(pi)
+```
+
+-   print takes care of the formatting
+-   can print only one obj at a time
+
+e.g.
+
+```{r catenation}
+#print("the value of pi is ", pi,"in two decimals")
+# the above doesn't work, use what's below
+
+print(a <- cat("the value of pi is ", pi,"in two decimals"))
+```
+
+## Assignment
+
+```{r variables}
+x <- 3
+y <- 5
+print(sqrt(x^2 + y^3))
+```
+
+-   variable held in workspace; we can change variable's data type at will
+
+```{r more_variables}
+x <- "sunday"
+print(x)
+x <<- 5
+# global variable
+```
+
+`=` assignment; `->` can also be used *(check the difference)*
+
+### CHECK the scope
+
+```{r scope_variables}
+ls()
+ls.str()
+# the str() is called for showing the variable structure
+```
+
+```{r}
+rm(x)
+rm (list = ls()) #dangerous
+```
+
+# Data Structures
+
+Understand as atomic vectors and **not lists**
+
+## Types:
+
+-   character
+-   logical
+-   integer
+-   numeric
+-   empty vector
+
+```{r vectors}
+a <- vector();a
+b <- vector("logical", length = 3);b
+
+logical(5)
+```
+
+```{r c_function}
+vec1 = c(1,2,5)
+# c is short for combine
+
+typeof(vec1)
+vec2 = c("sun","mon")
+vec3 = c(vec1,vec2)
+
+```
+
+A Vector should only have **similar type elements**.
+
+```{r type_casting}
+vec4 = c(vec2, as.character("3")); vec4
+a <- c(1,0,as.logical(3));a
+a <- c(1,0, as.numeric(FALSE));a
+a <- c(TRUE, FALSE, as.numeric(2));a
+```
+
+Again, a vector cannot contain mix data types.\\ Data elements can co-exist in a vector only if they have the some mode.
+
+```{r NA}
+x <- c("mon",NA, "wed")
+```
+
+## Comparison Operators
+
+
+When you compare a multi-element array to a single element it compares all the elements to that single element and returns a logical vector. 
+
+```{r comparison}
+# comparing  == != < > <= >=
+c(1,2,3,pi)==pi
+```
