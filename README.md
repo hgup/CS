@@ -1,4 +1,4 @@
 # UCSC 301
 
-📈 [Learning R](./docs/Plot-properties.md)
+📈 [Learning R](./docs/Plot-Properties.md)
 
