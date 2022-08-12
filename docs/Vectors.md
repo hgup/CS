@@ -98,7 +98,7 @@ Used in
 - Date-times[second or sub-second res] (**POSIXct** Vectors)
 - Durations (**difftime** Vectors)
 
-![Relationship]("/2022-08-05.Rmddocs/images/Web capture_12-8-2022_10216_bjfhmglciegochdpefhhlphglcehbmek.jpeg")
+![Relationship]("./docs/images/vectors-1.jpeg")
 
 ## 3.4.1 Factors
 
