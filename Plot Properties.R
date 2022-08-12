@@ -62,3 +62,4 @@ barplot(c(2,5), main="Simple Barplot",
 legend(2, 4, legend=c("Line 1", "Line 2"),
        col=c("red", "blue"), lty=1:2, cex=0.8,
        box.lty=2, box.lwd=2, box.col="green")
+

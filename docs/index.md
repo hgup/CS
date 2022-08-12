@@ -6,3 +6,4 @@ Undergrad Computer Science 301
 ## Learning R
 📈 [Plot Properties](Plot-Properties)
 
+�� [Vectors](Vectors)
