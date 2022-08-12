@@ -50,3 +50,19 @@ b
 c <- 1:6
 dim(c) <- c(3,2)
 c
+
+# FACTORS
+
+x <- factor(c("a","b","b","a"))
+x
+
+typeof(x)
+
+str(attributes(x))
+
+s_char <- c("m","m","m")
+s_factor <- factor(s_char, levels = c("m","f"))
+
+table(s_char)
+
+table(s_factor)

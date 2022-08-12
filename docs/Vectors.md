@@ -87,6 +87,40 @@ dim(c) <- c(3,2)
 c
 ```
 
-$$
-\textrm{The best way to think about this should be as follows. You have a linear vector that you can break using an } n \times m \times k \textrm{ arrangement} and by doing so, you first fill up the first } n \textrm{members and then move on to the next } n \textrm{ members in the next line. Till you finish } m \textrm{ such lines. After which the trend continues so that you can fill up} k {such sub-matrices.}
-$$
+> The best way to think about this should be as follows. You have a linear vector that you can break using an $n \times m \times k$  arrangement and by doing so, you first fill up the first $n$ members and then move on to the next  $n$ members in the next line.
+> Till you finish  $m$ such lines. After which the trend continues so that you can fill up $k$ such sub-matrices.
+
+# 3.4 S3 Atomic Vectors
+
+Used in
+- Categorical Data (**factor** vectors).
+- Dates[Day res] (**Date** Vectors)
+- Date-times[second or sub-second res] (**POSIXct** Vectors)
+- Durations (**difftime** Vectors)
+
+![Relationship]("/2022-08-05.Rmddocs/images/Web capture_12-8-2022_10216_bjfhmglciegochdpefhhlphglcehbmek.jpeg")
+
+## 3.4.1 Factors
+
+- built on top of an **integer vector**
+- attrs: `class` and `levels`
+  - Class: behavior
+  - Levels: set of allowed values
+
+```r
+x <- factor(c("a","b","b","a"))
+x
+```
+Factors are useful when you know the allowed set of values (like Male or Female) and need to tabulate all of them.
+
+```r
+s_char <- c("m","m","m")
+s_factor <- factor(s_char, levels = c("m","f"))
+
+table(s_char)
+table(s_factor)
+```
+
+**Ordered** factors add an additional order property to the regular *factors* (like Low, medium and High).
+
+
