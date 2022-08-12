@@ -1,7 +1,3 @@
----
-use_math: true
----
-
 ## 3.2.4 Testing and Coercion
 
 - Avoid using `is.Atomic()` or `is.Vector()` because, they don't work like your typical `is.numeric()` or `is.double` or `is.character`. Check the documentation to know what they really do.
