@@ -6,4 +6,8 @@ Undergrad Computer Science 301
 ## Learning R
 📈 [Plot Properties](Plot-Properties)
 
-🎯 [Vectors](Vectors)
+🎯 [Vectors](Vectors)[^1]
+
+[^1]: Still being filled
+
+
