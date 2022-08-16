@@ -14,7 +14,8 @@ par(omi = c(0.65, 0.25, 0.75, 0.75),
 library(readxl)
 ipsos <- read_excel("data_files/ipsos.xlsx")
 sort.ipsos <- ipsos[order(ipsos$Percent),]
-attach(sort.ipsos)
+
+attach(sort.ipsos) #Attach the database to use `Country` instead of `ipsos$Country`
 
 
 # Create Chart
@@ -25,6 +26,13 @@ x <- barplot( Percent, names.arg = F, horiz = T, border = NA,
 
 for (i in 1: length(Country))
 {
-  if (Contry[i] %in% c("Germany", "Brasil"))
+  if (Country[i] %in% c("Germany", "Brasil"))
+  {myFont <- "Inter Black"} else {myFont <- "Inter Light"}
+  text(-8, x[i], Country[i], xpd = T, adj = 1, cex = 0.85, family= myFont)
+  text(-3.5, x[i], Percent[i], xpd = T, adj = 1, cex = 0.85, family= myFont)
 }
+
+detach(sort.ipsos)
 dev.off()
+
+
