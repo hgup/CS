@@ -8,7 +8,9 @@ Undergrad Computer Science 301
 
 ## Learning R
 📈 [Plot Properties](Plot-Properties)[^1]
+📈 [Bar Plots](BarPlots)  
 
+🏹 [R Wisdom](rwisdom)
 🎯 [Vectors](Vectors)[^1]
 
 [^1]: Still being filled
