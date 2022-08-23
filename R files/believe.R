@@ -2,7 +2,7 @@
 pdf_file <- "pdf/believe.pdf"
 cairo_pdf(pdf_file, bg = "grey98", width = 9, height = 6.5)
 
-par(omi = c(0.65, 0.25, 0.75, 0.75),
+par(omi = c(0.65, 0.25, 0.75, 0.75)+0.2,
     mai = c(0.3,2,0.35,0),
     mgp = c(3,3,0),
     family = "Inter Light",
@@ -29,15 +29,15 @@ for (i in 1: length(Country))
 {
   if (Country[i] %in% POI)
   {myFont <- "Inter Black"} else {myFont <- "Inter Light"}
-  text(-8, x[i], Country[i], xpd = T, adj = 1, cex = 0.85, family= myFont)
-  text(-3.5, x[i], Percent[i], xpd = T, adj = 1, cex = 0.85, family= myFont)
+  text(-8.5, x[i], Country[i], xpd = NA, adj = 1, cex = 0.85, family= myFont)
+  text(-3.5, x[i], Percent[i], xpd = NA, adj = 1, cex = 0.85, family= myFont)
 }
 
 # Other Elements
 
 rect(0,-0.5,20,28, col = rgb(249,219,189,80, maxColorValue = 255), border = NA)
 rect(20,-0.5,40,28, col = rgb(249,219,189,120, maxColorValue = 255), border = NA)
-rect(40,-0.5,60,28, col = rgb(249,219,189,80, maxColorValue = 255), border = NA)
+rect(50,-0.5,60,28, col = rgb(249,219,189,80, maxColorValue = 255), border = NA)
 rect(60,-0.5,80,28, col = rgb(249,219,189,120, maxColorValue = 255), border = NA)
 rect(80,-0.5,100,28, col = rgb(249,219,189,80, maxColorValue = 255), border = NA)
 
@@ -63,7 +63,7 @@ mtext(c(0,20,40,60,80,100), at = c(0,20,40,60,80,100), 1, line = 0, cex = 0.80)
 
 mtext("`I definitely Believe in God or a Supreme Being`", 3, line = 1.3,
       adj = 0, cex = 1.2, family = "Inter Black", outer = T)
-mtext("was said in 2010 in :", 3, line = -0.4, adj = 0, outer = T)
+mtext("was said in 2010 in :", 3, line = -0.4, adj = 0, outer = T, family = "Inter Light", font = 4)
 mtext("Source: www.ipsos-na.com, Desigh: Stefan Fichtel, ixtract", 1, line =1,
        adj = 1.0, cex = 0.65, outer = T, font = 3)
 
