@@ -234,5 +234,5 @@ dev.off() # to flush (make changes permanent on) the pdf file
 # Final Output
 
 
-[Output](pdf/gender.pdf)
+![Output](pdfs/gender.pdf)
 
