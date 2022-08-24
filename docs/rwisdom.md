@@ -1,8 +1,10 @@
-# dev.off()
+# R Wisdom
+
+## dev.off()
 
 Sometimes plots don't show up in rstudio's default plot plane. In order to get them there, we must first turn **off** the existing devices by using `dev.off()` till there is only a `null device` left.
 
-# fonts
+## fonts
 
 While setting fonts, you have two aspects.
 
@@ -14,12 +16,12 @@ To set the family you have to use `family = "Inter Black"`, the available option
 Along with that you will have to mention that you want to use bold font or not, for that, refer to [this section](Plot-Properties#fonts)
  (hint: use `font = 2` for bold)
 
-# Reading the docs
+## Reading the docs
 
 - Every parameter starts with the type of input that is compatible with it.
-# Graphical Parameters
+## Graphical Parameters
 
-## `adj`
+### `adj`
 Specifies how text strings are justified.
 
 0 - Left Justified;
@@ -28,11 +30,11 @@ Specifies how text strings are justified.
 
 1 - Right Justified;
 
-# Graphics
+## Graphics
 
 `rect(l,b,r,t,...)`
 
-# Looping
+## Looping
 
 ```r
 for(i in 1: length(dataset)){
@@ -41,6 +43,6 @@ for(i in 1: length(dataset)){
 
 ```
 
-# Barplots
+## Barplots
 
 If you would like to superimpose on another graph use the property `add = T`
