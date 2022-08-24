@@ -230,9 +230,9 @@ dev.off() # to flush (make changes permanent on) the pdf file
 # Final Output
 
 
-<object data="https://github.com/hgup/cs/blob/c481356b3c17bbb3280fbcf33461a95f6a254b02/pdf/gender.pdf" type="application/pdf" width="90%" height="auto">
-    <embed src="https://github.com/hgup/cs/blob/c481356b3c17bbb3280fbcf33461a95f6a254b02/pdf/gender.pdf">
-        <p> If this browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/hgup/cs/blob/c481356b3c17bbb3280fbcf33461a95f6a254b02/pdf/gender.pdf">Download PDF</a>.</p>
+<object data="../pdf/gender.pdf" type="application/pdf" width="90%" height="auto">
+    <embed src="../pdf/gender.pdf">
+        <p> If this browser does not support PDFs. Please download the PDF to view it: <a href="../pdf/gender.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
