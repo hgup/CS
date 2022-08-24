@@ -21,7 +21,7 @@ attach(sort.ipsos) #Attach the database to use `Country` instead of `ipsos$Count
 
 # Create Chart
 x <- barplot( Percent, names.arg = F, horiz = T, border = NA,
-              xlim = c(0,100), col = "grey", cex.names = 0.85, axes = F)
+              xlim = c(0,100), col = "grey", axes = F)
 
 # Label Chart
 POI <- c("USA", "Brazil","India")
