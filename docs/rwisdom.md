@@ -38,4 +38,9 @@ Specifies how text strings are justified.
 for(i in 1: length(dataset)){
 # Do manipulations here
 }
+
 ```
+
+# Barplots
+
+If you would like to superimpose on another graph use the property `add = T`
