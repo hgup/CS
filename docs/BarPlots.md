@@ -120,7 +120,7 @@ x <- barplot( Percent, names.arg = F, horiz = T, border = NA,
 `axes` is set to `F` to hide the axes.
 
 
-**Iterate are highlight**
+**Iterate and highlight**
 
 ```r
 for (i in 1: length(Attitude)){
