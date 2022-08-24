@@ -1,4 +1,8 @@
-# Basic Skeleton
+# Bar Plots
+This is a demo so as to get you hands on with the code to create a good looking bar plot. You will have to create the xlsx data on your own which is not much of a big deal. You also need to know how to set up the relative path links. If you are good to go and can read data from the file (as shown below) then you can start.
+
+
+## Basic Skeleton
 
 This is how you should start when you are making a bar plot, I won't go into the details of what are the contents but in general this is what your
 goals are when making a plot.
@@ -230,9 +234,5 @@ dev.off() # to flush (make changes permanent on) the pdf file
 # Final Output
 
 
-<object data="../pdf/gender.pdf" type="application/pdf" width="90%" height="auto">
-    <embed src="../pdf/gender.pdf">
-        <p> If this browser does not support PDFs. Please download the PDF to view it: <a href="../pdf/gender.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[Output](pdf/gender.pdf)
 
