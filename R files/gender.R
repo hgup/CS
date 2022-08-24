@@ -39,7 +39,7 @@ for (i in 1: length(Attitude)){
     myfont = "Inter Thin"
     highlight <- c(highlight, 0)
   }
-  text(4.5, x[i], Percent[i], xpd = F, adj = 0, col= 'white', cex = 0.8, family = "Inter Light")
+  text(4.5, x[i], format(Percent[i],nsmall = 1), xpd = F, adj = 0, col= 'white', cex = 0.8, family = "Inter Light")
   text(-1.5, x[i],paste(strwrap(Attitude[i],width = 40),collapse = '\n'), xpd = NA, adj = 1, cex = 0.65, family = myfont)
   
 }
@@ -61,14 +61,14 @@ text(100,9.05, "all values in %", font = 1,family= "Inter Thin", adj = 1, xpd = 
 
 mtext(c(0,20,40,60,80,100), at = c(0,20,40,60,80,100), 1, line = 0, cex = 0.80)
 
-mtext("It is often said that attitudes towards gender roles are changing",3, font=4, line = 1.6,
+mtext("It is often said that attitudes towards gender roles are changing",3, font=1, line = 1.6,
       adj = 0, cex = 1.2, family = "Inter Black", outer = T)
 
 mtext("Agree strongly/ agree",3, font = 2, adj = 0, cex = 1, family = "Inter Thin", outer = T)
 mtext("Source: The voices in my head. Docs: https://hgup.github.io/cs",1, font = 3, adj = 1, cex = 0.6, family = "Inter Light", outer = T)
 
 
-detach(women)
+#detach(women)
 
 dev.off()
 
