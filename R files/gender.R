@@ -68,7 +68,7 @@ mtext("Agree strongly/ agree",3, font = 2, adj = 0, cex = 1, family = "Inter Thi
 mtext("Source: The voices in my head. Docs: https://hgup.github.io/cs",1, font = 3, adj = 1, cex = 0.6, family = "Inter Light", outer = T)
 
 
-#detach(women)
+detach(women)
 
 dev.off()
 
