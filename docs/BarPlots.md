@@ -233,6 +233,4 @@ dev.off() # to flush (make changes permanent on) the pdf file
 
 # Final Output
 
-
-![Output](pdfs/gender.pdf)
-
+<object data="pdfs/gender.pdf" width="1000" height="1000" type='application/pdf'></object>
