@@ -1,13 +1,21 @@
-# Bar Plots
+---
+title: Bar Plot Example
+author: hgup
+date: 2022-08-01
+categories: [R, Plotting]
+has_toc: true
+tags: [Programming]
+---
+# Introduction
 This is a demo so as to get you hands on with the code to create a good looking bar plot. You will have to create the xlsx data on your own which is not much of a big deal. You also need to know how to set up the relative path links. If you are good to go and can read data from the file (as shown below) then you can start.
 
 
-## Basic Skeleton
+# Basic Skeleton
 
 This is how you should start when you are making a bar plot, I won't go into the details of what are the contents but in general this is what your
 goals are when making a plot.
 
-### Goals
+## Goals
 
 - Create an output device (like a pdf, or just `RStudioGD` for seeing output in R Studio itself)
 - Add default params (using `par`)
@@ -20,14 +28,14 @@ goals are when making a plot.
 - Add other elements, highlights and text using `text`, `arrows`, and superimposing `barplot` etc
 - Add some `mtext` and give metadata.
 
-### Philosophy
+## Philosophy
 Everything has to be given coordinates based on the main bar plot, try to minimize hardcoding values and use them directly from the plot.
 E.g. if `x <- barplot(...` then `x[1]` will give the coordinate of the first plot.
 
 
-### How?
+## How?
 
-**Create an output Device**
+### **Create an output Device**
 
 ```r
 pdf_file <- "pdf/believe.pdf"
@@ -36,7 +44,7 @@ cairo_pdf(pdf_file, bg = "grey98", width = 9, height = 6.5)
 Here you added the height and width of the pdf too. Depending on use-case.
 
 
-**Add default params**
+### **Add default params**
 
 ```r
 par(omi = c(0.65, 0.25, 0.75, 0.75),
@@ -69,7 +77,7 @@ par(mar=c(5,4,4,2) + 0.1)
 ```
 
 
-**Read the Data**
+### **Read the Data**
 
 ```r
 # Import data and prepare chart
@@ -77,7 +85,7 @@ library(readxl)
 women <- read_excel("data_files/responses_from_women.xlsx")
 ```
 
-**Sort (optional)**
+### **Sort (optional)**
 
 ```r
 sort.women<- women[order(women$Percent),]
@@ -85,7 +93,7 @@ sort.women<- women[order(women$Percent),]
 Try to figure out the logic by yourself. We will not be using it in our example here.
 
 
-**Attach it**
+### **Attach it**
 ```r
 attach(women)
 
@@ -99,7 +107,7 @@ detach(women) # Do it!
 Attach the database to use `women` instead of `women$Attitude`. Also don't forget
 to detach it when you are done using the data.
 
-**Plot it**
+### **Plot it**
 
 This is the standard command for plotting bars in R, let's explore it.
 
@@ -124,7 +132,7 @@ x <- barplot( Percent, names.arg = F, horiz = T, border = NA,
 `axes` is set to `F` to hide the axes.
 
 
-**Iterate and highlight**
+### **Iterate and highlight**
 
 ```r
 for (i in 1: length(Attitude)){
@@ -137,7 +145,7 @@ x_hi <- barplot( highlight, names.arg = F, horiz = T, border = NA,
 ```
 We just select a portion of data by filtering out using a loop and then we use plot that data (superimpose it, persay) by using an additional argumet `add = T` which implies that we won't overwrite the previous plot, rather add to it.
 
-**Iterate and Label**
+### **Iterate and Label**
 
 ```r
 for (i in 1: length(Attitude)){
@@ -183,7 +191,7 @@ paste(d, collapse = '\n'
 ```
 There we go.
 
-**Add other elements**
+### **Add other elements**
 
 ```r
 # Rects
@@ -208,7 +216,7 @@ text(100,9.05, "all values in %", font = 1,family= "Inter Thin", adj = 1, xpd = 
 ```
 Remember that `adj` is used to justify the text.
 
-**Add some `mtext` and give metadata**
+### **Add some `mtext` and give metadata**
 
 ```r
 mtext(c(0,20,40,60,80,100), at = c(0,20,40,60,80,100), 1, line = 0, cex = 0.80)
@@ -224,7 +232,7 @@ The second parameter `1 (bottom) 2 (left) 3 (top) 4 (right)` specifies on which 
 The `at = c(0,20,40,60,80,100)` attribute allows a vector of strings or numbers to be placed at those designated positions. Here, with respect to the x-axis.
 
 
-**Finally**
+### **Finally**
 ```r
 detach(women)
 

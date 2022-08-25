@@ -4,7 +4,6 @@ author: hgup
 date: 2022-08-01
 categories: [R, Plotting]
 tags: [Programming]
-render_with_liquid: false
 ---
 
 # Bar Plots
