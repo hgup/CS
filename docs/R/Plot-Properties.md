@@ -3,6 +3,8 @@ title: Plot Properties
 author: hgup
 date: 2022-08-01
 categories: [R, Plotting]
+parent: R Programming
+nav_order: 1
 tags: [Programming]
 ---
 
