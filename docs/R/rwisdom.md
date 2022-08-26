@@ -1,3 +1,10 @@
+---
+layout: default
+title: R-Wisdom
+parent: R Programming
+nav_order: 1
+---
+
 # R Wisdom
 
 ## dev.off()
