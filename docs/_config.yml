@@ -11,7 +11,7 @@ url: "https://hgup.github.io"
 logo: "/assets/logo.png"
 
 # theme
-#
+colorscheme: awo
 
 # Back to top link
 back_to_top: true
