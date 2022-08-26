@@ -11,12 +11,23 @@ url: "https://hgup.github.io"
 logo: "/assets/logo.png"
 
 # theme
-colorscheme: awo
+color_scheme: awo
+
+# timestamps
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y"
 
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
 
+# Aux links
+aux_links:
+  "hgup@github":
+    - "//github.com/hgup"
+  
+  "YouTube":
+    - "//youtube.com/wizact"
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
