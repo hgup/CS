@@ -56,7 +56,7 @@ par(omi = c(0.65, 0.25, 0.75, 0.75),
     las = 1)
 
 ```
-Convention: `c(b,l,t,r)` (sounds like MLTR)
+Convention: `c(b,l,t,r)` (sounds like [MLTR](https://en.wikipedia.org/wiki/Michael_Learns_to_Rock))
 
 ![Margins](images/margins.png)
 
