@@ -21,6 +21,8 @@ last_edit_time_format: "%b %e %Y"
 back_to_top: true
 back_to_top_text: "Back to top"
 
+
+heading_anchors: true
 # Aux links
 aux_links:
   "hgup@github":
