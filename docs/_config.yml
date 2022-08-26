@@ -3,12 +3,8 @@ remote_theme: just-the-docs/just-the-docs
 # meta
 title: AWDocs
 description: You need them!
-baseurl: "/cs/docs"
 url: "https://hgup.github.io"
 
-permalinki: pretty
-
-# color_scheme: awo
 
 
 # logo
