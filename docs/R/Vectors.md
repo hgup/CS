@@ -1,3 +1,10 @@
+---
+layout: default
+title: Vectors
+parent: R Programming
+nav_order: 1
+---
+
 # Vectors
 
 ## 3.2.4 Testing and Coercion
@@ -100,7 +107,7 @@ Used in
 - Date-times[second or sub-second res] (**POSIXct** Vectors)
 - Durations (**difftime** Vectors)
 
-![Relationship]("./docs/images/vectors-1.jpeg")
+![Relationship]("images/vectors-1.jpeg")
 
 ## 3.4.1 Factors
 
