@@ -26,9 +26,12 @@ Along with that you will have to mention that you want to use bold font or not, 
 ## Reading the docs
 
 - Every parameter starts with the type of input that is compatible with it.
-## Graphical Parameters
 
-### `adj`
+## Graphics
+
+### Parameters
+
+#### `adj`
 Specifies how text strings are justified.
 
 0 - Left Justified;
@@ -37,9 +40,11 @@ Specifies how text strings are justified.
 
 1 - Right Justified;
 
-## Graphics
 
-`rect(l,b,r,t,...)`
+### Commands
+
+- `rect(l,b,r,t,...)`
+- `points(px, py, pch = 15, cex = 4, col = ..., xpd = T)` These are used to create some point graphics. `pch` defines what type of **dot** to be used. `cex` for size.
 
 ## Looping
 
@@ -53,3 +58,26 @@ for(i in 1: length(dataset)){
 ## Barplots
 
 If you would like to superimpose on another graph use the property `add = T`
+
+## Reading Files
+
+- `readxl` package works very good for reading and importing data from xlsx files.
+- to read one row use the command
+
+```r
+data[1,]
+```
+assuming that the data from the excel file is loaded to variable `data`.
+
+
+## Matrix
+
+if `m` is a matrix then
+```r
+m[1,1] # gives the 1,1 element
+m[1,] # gives the first row
+m[,1] # gives the first column
+```
+
+The `,1` syntax might not make sense, so think of it this way. `,1` syntax gives you all `n,1` results
+

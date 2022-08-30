@@ -8,7 +8,7 @@ par(omi = c(0.65, 0.25, 0.75, 0.75)+0.2,
     las = 1)
 
 library(readxl)
-women <- read_excel("data_files/responses_from_women.xlsx")
+women <- read_excel("datafiles/responses_from_women.xlsx")
 
 attach(women)
 
