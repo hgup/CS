@@ -1,0 +1,23 @@
+# DOMAIN
+
+- 150 volunteer students were interviewed and asked to share their views about what they would like to do on a weekend.
+- The survey was recorded in an agreement/disagreement format.
+
+
+# DATA ABSTRACTION
+
+- 6 views and the students' opinion about it
+
+
+
+# IDIOM TO BE USED
+
+- A Bar Plot
+
+- All response categorised into Agree Vs Disagree, so as to aid comparison.
+
+- since the number is small enough (#150), we may use it directly instead of using percentages(100%)
+
+
+# ALGORITHM
+
