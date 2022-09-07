@@ -1,0 +1,5 @@
+myC1<-rgb(0,208, 226, maxColorValue=255)
+myC2<-rgb(109,221, 225, maxColorValue=255)
+myC3<-rgb(255,138, 238, maxColorValue=255)
+myC4<-rgb(255,0, 210, maxColorValue=255 )
+colours<-c("grey",myC1, myC2,myC3,myC4)

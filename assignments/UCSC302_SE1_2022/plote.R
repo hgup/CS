@@ -14,6 +14,31 @@ par(omi = c(0.65, 0.25, 0.75, 0.75),
     las = 1)
 
 
+# Reading the data using `readxl` library
+library(readxl)
+views_data <- read_excel("data.xlsx")
+
+# detach after data is read
+detach("package:readxl", unload = TRUE)
+
+
+# load the data into a matrix/array class -> data
+data <- rbind(
+  views_data$Not_Sure,
+  views_data$Agree_Strongly,
+  views_data$Agree,
+  views_data$Disagree,
+  views_data$Disagree_Strongly)
+
+# set a max value for x limits
+d_max <- 150
+
+#import colors
+source("colors.r",encoding="UTF-8" ) 
+
+
 
 # flush the changes in pdf/views.pdf
-dev.off()
+while (length(dev.list())){
+    dev.off()
+}
