@@ -37,6 +37,25 @@ d_max <- 150
 source("colors.r",encoding="UTF-8" ) 
 
 
+# PLOTTING
+
+# plot the NOT SURE
+barplot(-rep(d_max, 6), cex.names=1.1,horiz=T,
+        border=par ("bg"), xlim=c(-d_max,d_max), col=colours[1],axes=T)
+        
+barplot (-(d_max-data[1, ]), horiz =T,
+        border=par("bg"),col=par("bg"),axes=F, add=T)
+
+
+# plot AGREE
+barplot(-data[3:2,],horiz=T,
+        border=NA, col=colours[3:2],axes=F, add=T)
+
+# plot DISAGREE
+barplot(data[4:5,], horiz=T,
+        border=NA, col=colours[4:5],axes=F,add=T )
+
+
 
 # flush the changes in pdf/views.pdf
 while (length(dev.list())){
