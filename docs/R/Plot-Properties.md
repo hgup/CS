@@ -158,3 +158,24 @@ legend(2, 4, legend=c("Line 1", "Line 2"),
 ```r
 text(x, y, labels)
 ```
+
+## Some useful Knowledge
+
+- `xlim` helps you to set the limit. Once done, you can be rest assured that the next plots that will be added (`add=T`) to this plot are going to use the same xlimits as set by the first one.
+
+  - ```R
+    barplot(c(10,0,0,0,0), cex.names=1.1,horiz=T,
+            border=par ("bg"), xlim=c(-20,100), col=colours[1],axes=F)
+    barplot(c(0,10,0,0,0), cex.names=1.1,horiz=T,
+            border=par ("bg"), xlim=c(-50,100), col=colours[2],axes=F,add = T)
+    barplot(c(0,0,10,0,0), cex.names=1.1,horiz=T,
+            border=par ("bg"), xlim=c(-30,100), col=colours[3],axes=F,add = T)
+    barplot(c(0,0,0,10,0), cex.names=1.1,horiz=T,
+            border=par ("bg"), xlim=c(-40,100), col=colours[4],axes=F,add = T)
+    barplot(c(0,0,0,0,10), cex.names=1.1,horiz=T,
+            border=par ("bg"), xlim=c(-50,100), col=colours[5],axes=F,add = T)
+    ```
+
+    In this example, only the first bar plot's limits `c(-20,100)` will be considered.
+
+- You can use `plot.new()` to create a new plot and then add to it other plots using `add=T`.
