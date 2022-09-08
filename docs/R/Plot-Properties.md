@@ -178,4 +178,5 @@ text(x, y, labels)
 
     In this example, only the first bar plot's limits `c(-20,100)` will be considered.
 
-- You can use `plot.new()` to create a new plot and then add to it other plots using `add=T`.
+- You can use `plot.new()` to create a new plot and then add to it other plots using `add=T`
+
