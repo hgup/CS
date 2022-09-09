@@ -8,7 +8,7 @@ cairo_pdf(pdf_file, bg = "#191919", width = 13, height = 10.5)
   # margin size: 1.8,3.75,0.25,0
   # font: Inter Light
   # text orientation: horizontal
-par(omi = c(0.25,0.75,1.5,0.75),
+par(omi = c(0.25,0.75,1.5,0.75)+c(0,0.4,0,0),
     mai = c(1.8,3.75,0.25,0),
     family = "Inter Light",
     lheight = 1.5,
@@ -52,34 +52,36 @@ barplot (-(d_max-data[1, ]), horiz =T,
 # plot AGREE
 barplot(-data[3:2,],horiz=T,
         border=NA, col=colours[3:2],axes=F, add=T)
+text (-data[3,]-data[2,]-3, x,data[3,]+data[2,],adj=1,xpd=T,family = "Inter Regular", font=1, cex=1.1, col=myC5)
 
 # plot DISAGREE
 barplot(data[4:5,], horiz=T,
         border=NA, col=colours[4:5],axes=F,add=T )
+text (data[4,]+data[5,]+3, x,data[4,]+data[5,],adj=0,xpd=T,family = "Inter Regular", font=1, cex=1.1, col=myC3)
 
 
-myfont = "Inter Light"
 
 # Labels
 for (i in 1: length(as.matrix(views_data[,1]))){
-  text(-155, x[i], paste(strwrap(views_data[i,1],width = 50),collapse = '\n'), xpd = NA, adj = 1, cex = 1.1, family = myfont)
+  text(-155, x[i], paste(strwrap(views_data[i,1],width = 45),collapse = '\n'), xpd = NA, adj = 1, cex = 1.1, family = "Inter Light")
   
 }
 
 # Arrows and stuff
-myresponses <- c("Not Sure","Agree Strongly", "Agree", "Disagree", "Disagree Strongly")
+arrows(0,-0.1,0,8.6,lwd=2.5, length=0, xpd=T, col="white")
 
-arrows(0,-0.1,0,8.6,lwd=2.5, length=0, xpd=T, col="Skyblue3")
-px<-c(-160, -140,-40,40,120); tx<-c(-165, -85,-45,35,115)-2; y<-rep(-1,5)
+# Creating the Legend
+myresponses <- c("Not Sure","Agree Strongly", "Agree", "Disagree", "Disagree Strongly")
+px<-c(-160, -140,-40,40,120); tx<-c(-165, -80,-45,35,115)-4; y<-rep(-1,5)
 points(px, y, pch=15, cex=4, col=colours,xpd=T )
-mtext (c(120,100, 80, 60, 40, 20,0, 20, 40, 60, 80, 100,120) , at=c(-120,-100, -80, -60, -40, -20,0, 20, 40, 60, 80, 100, 120),1, line=1, cex=0.95)
+mtext (c(120,100, 80, 60, 40, 20,0, 20, 40, 60, 80, 100,120) , at=c(-120,-100, -80, -60, -40, -20,0, 20, 40, 60, 80, 100, 120),1, line=1, cex=1)
 text (tx, y,myresponses,adj=1,xpd=T, font=3, cex=1)
 
 
 # Titling
-mtext("Opinion about Long Weekends",3, line=2.2, adj=0, cex=2.5, outer=T, family="Inter Black")
+mtext("Opinion about Long Weekends",3, line=2.2,col="#F9F4F5", adj=0, cex=2.5, outer=T, family="Inter Black")
 mtext("Agree Vs Disagree",3, line=0, adj=0, cex=2.5/1.5, outer=T,font = 4, family="Inter Thin")
-mtext( "Values in Numbers",3,line=1, adj=1, cex=0.95, font=3)
+mtext( "Values in Numbers              ",3,line=1, adj=1, cex=0.95, font=3)
 mtext("UCSC-301 Assignment. Code available @ https://github.com/hgup/cs/tree/main/assignments/UCSC302_SE1_2022",1,line=7,adj =1, cex=0.95, font=3)
 mtext ("N=150",3, line=1, adj=0, cex=1.15, family="Inter", font=3)
 
