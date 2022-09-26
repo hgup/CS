@@ -8,4 +8,6 @@ Undergrad Computer Science 301
 
 📄 [R Commands CHEATSHEET](reading/R_commands.pdf)
 
+📄 [Pie Charts](reading/Pie_Charts.pdf)
+
 
