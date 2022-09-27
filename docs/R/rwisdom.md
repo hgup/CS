@@ -81,3 +81,7 @@ m[,1] # gives the first column
 
 The `,1` syntax might not make sense, so think of it this way. `,1` syntax gives you all `n,1` results
 
+## Par Values
+
+- When using the `omi` values: only outer margin gets increased. That is the portion of the graph that was clipped will remain the same even after the margin is applied.
+- When using the `mai` values: the size of the plot is reduced allowing you to fit more in the same space (*inside the outer margin*). Hence, when things are not fitting, increase `mai`.
