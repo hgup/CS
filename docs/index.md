@@ -10,4 +10,4 @@ Undergrad Computer Science 301
 
 📄 [Pie Charts](reading/Pie_Charts.pdf)
 
-
+📄 [Gantt Chart](reading/Gantt_Chart.pdf)
