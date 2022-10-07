@@ -6,9 +6,12 @@ cairo_pdf(bg = "grey98", pdf_file, width= 11, height = 11)
 
 
 library(RColorBrewer)
-
 # brewer.pal(length(pie.myData),<brwer.pal.info>)
 
+
+# Reading Data
+library(readxl)
+data <- read_excel("datafiles/.xlsx")
 
 #! LEGEND
 
