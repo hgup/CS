@@ -33,7 +33,8 @@ dates <- as.Date(as.matrix(myScheduleData[,c('from','to')]))
 myBegin <- min(dates)
 myEnd <- max(dates)
 attach(mySchedule)
-plot(from,1:n, type="n", axes = F, xlim = c(myBegin,myEnd), ylim = c(n,1))
+plot(from,1:n,,type="n", axes = F, xlim = c(myBegin,myEnd), ylim = c(n,1))
+
 for (i in 1:n)
 {
   if(!(is.na(Group[i])) & (nchar(as.character (Group[i]))>0)){
