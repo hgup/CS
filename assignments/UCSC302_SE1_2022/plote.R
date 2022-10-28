@@ -35,8 +35,15 @@ data <- rbind(
 # set a max value for x limits
 d_max <- 150
 
-#import colors
-source("colors.r",encoding="UTF-8" ) 
+#define colors
+
+myC1<- "#3fa34d"
+myC2<- "#5bba6f"
+myC5<-rgb(92,171, 125, maxColorValue=255)
+myC6<-rgb(147,200, 169, maxColorValue=255 )
+myC4<-rgb(77,157, 224, maxColorValue=255)
+myC3<-rgb(116,179, 231, maxColorValue=255)
+
 
 
 # PLOTTING
