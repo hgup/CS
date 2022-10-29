@@ -4,15 +4,10 @@ pdf_file <- "output/plot1.pdf"
 cairo_pdf(pdf_file, bg = "#f7f7f7", width = 13, height = 10.5)
 
 # svg
-svg_file <- "output/plot1.svg"
-svg(svg_file, bg = "#f7f7f7", width = 13, height = 10.5)
+#svg_file <- "output/plot1.svg"
+#svg(svg_file, bg = "#f7f7f7", width = 13, height = 10.5)
 
 
-# Some default parameters
-  # outer margins: 0.25,0.75,1,0.75
-  # margin size: 1.8,3.75,0.25,0
-  # font: Inter Light
-  # text orientation: horizontal
 par(omi = c(0.25,0.75,1.5,0.75)+c(0,0.4,0,0),
     mai = c(1.8,3.45,0.75,0),
     family = "Inter Light",
@@ -41,15 +36,7 @@ data <- rbind(
 d_max <- 650
 
 #define colors
-
-myC1<- "#3B6572" #main
-myC2<- "#365B6D" #secondary_main
-myC3<- "#BEDAD3" #light
-myC4<- "#A7C8BE" #
-
-myC5<- myC2 #font
-myC6<- myC2
-colours<-c("#5AAA95",myC1, myC2,myC3,myC4)
+source(file="src/colors.R")
 
 
 
