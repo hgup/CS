@@ -1,11 +1,11 @@
 
 # Open a Pdf device: output to pdf/views.pdf
-pdf_file <- "output/plot1.pdf"
-cairo_pdf(pdf_file, bg = "#f7f7f7", width = 13, height = 10.5)
+#pdf_file <- "output/plot1.pdf"
+#cairo_pdf(pdf_file, bg = "#f7f7f7", width = 13, height = 10.5)
 
 # svg
-#svg_file <- "output/plot1.svg"
-#svg(svg_file, bg = "#f7f7f7", width = 13, height = 10.5)
+svg_file <- "output/plot1.svg"
+svg(svg_file, bg = "transparent", width = 13, height = 10.5)
 
 
 par(omi = c(0.25,0.75,1.5,0.75)+c(0,0.4,0,0),
@@ -44,10 +44,10 @@ source(file="src/colors.R")
 
 # plot the NOT SURE
 x <- barplot(-rep(d_max, 4), cex.names=1.1,horiz=T,
-        border=par ("bg"), xlim=c(-d_max,d_max), col=colours[1],axes=F)
+        border=bgC, xlim=c(-d_max,d_max), col=colours[1],axes=F)
         
 barplot (-(d_max-data[1, ]), horiz =T,
-        border=par("bg"),col=par("bg"),axes=F, add=T)
+        border=bgC,col=bgC,axes=F, add=T)
 
 # plot AGREE
 barplot(-data[3:2,],horiz=T,

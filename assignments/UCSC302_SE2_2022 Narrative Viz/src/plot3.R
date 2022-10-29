@@ -10,11 +10,12 @@ myData <- sort(data,decreasing = T)
 
 
 # OUTPUT OPTIONS
-#pdf_file <- "output/plot3.pdf"
-#cairo_pdf(bg = "grey98", pdf_file, width= 11, height = 11)
-
+pdf_file <- "output/plot3.pdf"
 svg_file <- "output/plot3.svg"
-svg(bg = "transparent", svg_file, width= 11, height = 11)
+
+cairo_pdf(bg = "grey98", pdf_file, width= 11, height = 11)
+#svg(bg = "transparent", svg_file, width= 11, height = 11)
+
 par(omi=c(2,0.5,1,.25), mai=c(0.5,1.2,1,1.2), cex=1.4,
     family = "Inter Light",las = 1)
 
@@ -23,18 +24,18 @@ source(file="src/colors.R")
 
 
 # PLOT
-x <- barplot(myData, col = pieC,ylim= c(0,330),
+x <- barplot(myData, col = rev(pieC[1:3]),ylim= c(0,330),
     border = 0,las= 1,cex.axis=1.3, cex.names = 1.1, axes = F)
 axis(2,at=seq(0,300,50))
 
 # EXTRA PLOT LABELS
-text(x, y = myData + 5, myData)
+text(x, y = myData + 9, myData)
 
 
 #-------------------------------:TITLING:-------------------------------
 # TOP
 mtext("How do you feel in the morning?",3, line = 1, cex = 2.2, family = "Inter Black", adj = 0,
-      outer = T)
+      outer = T, col = myC2)
 mtext("We surveyed students on a random working day",3,
       line = -1.75, cex = 1.7, family = "Inter Thin", font = 3, adj = 0,
       outer = T)

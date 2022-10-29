@@ -1,9 +1,9 @@
-pdf_file <- "output/plot2.pdf"
-cairo_pdf(bg = "#f7f7f7", pdf_file, width= 11, height = 11)
+#pdf_file <- "output/plot2.pdf"
+#cairo_pdf(bg = "#f7f7f7", pdf_file, width= 11, height = 11)
 
 
-#svg_file <- "output/plot2.svg"
-#svg(bg = "#f7f7f7", svg_file, width= 11, height = 11)
+svg_file <- "output/plot2.svg"
+svg(bg = "transparent", svg_file, width= 11, height = 11)
 
 par(omi=c(0,0,0,0)+1.3, mai = c(0,0,1,0.2)+0.2,
     family = "Inter Light",las = 1)

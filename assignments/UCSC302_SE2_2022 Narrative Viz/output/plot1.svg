@@ -385,8 +385,7 @@
   <path d="M 605 108 L 608 108 L 608 620 L 605 620 Z M 605 108 "/>
 </clipPath>
 </defs>
-<g id="surface834">
-<rect x="0" y="0" width="936" height="756" style="fill:rgb(96.862745%,96.862745%,96.862745%);fill-opacity:1;stroke:none;"/>
+<g id="surface1411">
 <path style="fill-rule:nonzero;fill:rgb(35.294118%,66.666667%,58.431373%);fill-opacity:1;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(96.862745%,96.862745%,96.862745%);stroke-opacity:1;stroke-miterlimit:10;" d="M 606.601563 591.867188 L 331.203125 591.867188 L 331.203125 502.011719 L 606.601563 502.011719 Z M 606.601563 591.867188 "/>
 <path style="fill-rule:nonzero;fill:rgb(35.294118%,66.666667%,58.431373%);fill-opacity:1;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(96.862745%,96.862745%,96.862745%);stroke-opacity:1;stroke-miterlimit:10;" d="M 606.601563 484.039063 L 331.203125 484.039063 L 331.203125 394.183594 L 606.601563 394.183594 Z M 606.601563 484.039063 "/>
 <path style="fill-rule:nonzero;fill:rgb(35.294118%,66.666667%,58.431373%);fill-opacity:1;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(96.862745%,96.862745%,96.862745%);stroke-opacity:1;stroke-miterlimit:10;" d="M 606.601563 376.214844 L 331.203125 376.214844 L 331.203125 286.359375 L 606.601563 286.359375 Z M 606.601563 376.214844 "/>
