@@ -1,4 +1,4 @@
-##Data
+## INDEX for `plot#.R` and `data#.R`
 
 1: Waking up early
 
@@ -9,4 +9,4 @@
 4: intermittent fasting
 
 
-> **NOTE**: Please Open [Final Output.pdf](https://github.com/hgup/cs/blob/main/assignments/UCSC302_SE2_2022%20Narrative%20Viz/Final%20Output.pdf)
+> Please Open [Final Output.pdf](https://github.com/hgup/cs/blob/main/assignments/UCSC302_SE2_2022%20Narrative%20Viz/Final%20Output.pdf)
