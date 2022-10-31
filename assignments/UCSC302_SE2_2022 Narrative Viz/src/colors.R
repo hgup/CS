@@ -14,4 +14,7 @@ pieC <- c("#365b6d","#42747a","#4d8d86","#5aaa95","#81b9aa","#a7c8be","#cfe0db",
 )
 bgC <- "#f7f7f7"
 
+radC1 <- rgb(129, 185, 170, alpha = 160, maxColorValue = 255)
+radC2 <- rgb(54, 91, 109, alpha=100, maxColorValue = 255)
+
 # use myC2 for headings
