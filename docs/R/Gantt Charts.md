@@ -1,3 +1,14 @@
+---
+title: Gantt Charts
+author: hgup
+date: 2022-08-01
+categories: [R, Plotting, Planning]
+has_toc: false
+parent: R Programming
+nav_order: 1
+tags: [Programming]
+---
+
 # Gantt Charts
 
 - `nrow` counts the number of rows in a matrix
