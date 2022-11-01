@@ -21,10 +21,11 @@ tags: [Programming]
 
 - when accessing data from a dataset (eg. `myScheduleData`) use the following syntax
 
-  ```R
-  myScheduleData[rows,cols]
-  # eg. of rows: c(1,2,3), blank for all rows
-  # eg. of cols: c("from","to"), blank for all cols
+```R
+myScheduleData[rows,cols]
+# eg. of rows: c(1,2,3), blank for all rows
+# eg. of cols: c("from","to"), blank for all cols
+```
 
 - `ylim` can also be given  as `c(n,1)` for the opposite order
 - `segments` ???
