@@ -1,8 +1,13 @@
 # Questions
 
-[] Q1: Create a pie chart showing the proportion of cars from the mtcars data set that have different carb values.
+[-] Q1: Create a pie chart showing the proportion of cars from the mtcars data set that have different carb values.
 
-[] Q2: Create a bar graph, that shows the number of each gear type in mtcars.
+- add percentages
+- change colorscheme
+
+[-] Q2: Create a bar graph, that shows the number of each gear type in mtcars.
+
+
 
 [] Q3: Next show a stacked bar graph of the number of each gear type and how they are further divided out by cyl.
 

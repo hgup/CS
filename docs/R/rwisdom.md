@@ -85,3 +85,13 @@ The `,1` syntax might not make sense, so think of it this way. `,1` syntax gives
 
 - When using the `omi` values: only outer margin gets increased. That is the portion of the graph that was clipped will remain the same even after the margin is applied.
 - When using the `mai` values: the size of the plot is reduced allowing you to fit more in the same space (*inside the outer margin*). Hence, when things are not fitting, increase `mai`.
+
+## Wrapping Labels
+
+In the `dataframe` use this
+
+```r
+# Att_lab : Attitude labels
+data$Att_lab <- str_wrap(data$Attitude,width=40)
+```
+then plot the `data$Att_lab`
