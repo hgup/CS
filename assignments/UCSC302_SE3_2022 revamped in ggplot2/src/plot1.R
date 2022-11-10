@@ -4,16 +4,17 @@ library(ggplot2)
 library(scales)
 
 theme_set(theme_minimal())
+source("./src/settings.R")
 
 tC <- rev(table(mtcars$carb))
 
 brks <- as.matrix(cumsum(tC)) - 0.5 * as.matrix(tC)
-percs <- paste(as.character(tC/sum(tC)*100),"%", sep = "")
+percs <- paste(round(tC/sum(tC)*100,digits = 2),"%", sep = "")
 # real breakthrough logic here
 
 ggplot(mtcars, aes(x = "", fill = factor(carb) )) +
   geom_bar(width = 1) +
-  theme( plot.title = element_text(hjust = 0.5)) +
+  theme( plot.title = element_text(colour = rgb(30,30,30,100,maxColorValue = 100),size= 20,hjust = 0.5,face = "bold")) +
   labs(fill = "# of \nCarburators",
        x = NULL,
        y = NULL,
