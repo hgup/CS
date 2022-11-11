@@ -11,7 +11,8 @@ ggplot(mtcars,aes(x = wt, y = mpg)) +
       caption = "Source: mtcars",
       x = "Weight (tonnes)",
       y = "Miles Per Gallon") + 
-  theme(plot.title = head_txt)+
+  theme(plot.title = head_txt,
+        plot.margin = margin(15,15,10,15))+
   scale_x_continuous(breaks = c(0:6))
   
 

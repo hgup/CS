@@ -14,7 +14,7 @@ percs <- paste(round(tC/sum(tC)*100,digits = 2),"%", sep = "")
 
 ggplot(mtcars, aes(x = "", fill = factor(carb) )) +
   geom_bar(width = 1) +
-  theme( plot.title = element_text(colour = rgb(30,30,30,100,maxColorValue = 100),size= 20,hjust = 0.5,face = "bold")) +
+  theme(plot.margin = margin(10,5,10,15),plot.title = element_text(colour = rgb(30,30,30,100,maxColorValue = 100),size= 20,hjust = 0.5,face = "bold")) +
   labs(fill = "# of \nCarburators",
        x = NULL,
        y = NULL,
