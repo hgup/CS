@@ -1,5 +1,3 @@
-# UCSC 301
-
-📈 [Learning R](./docs/Plot-Properties.md)
+# UCSC 401
 
 [Link for files](https://hgup.github.io/ghpages-fileserver/)
